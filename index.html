@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eyad Emad Shaker — Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-dot"></div>
+
+  <!-- ========== INTRO SCREEN ========== -->
+  <div id="intro">
+    <canvas id="intro-canvas"></canvas>
+    <div id="intro-content">
+      <div id="intro-logo">EES</div>
+      <div id="intro-bar"><div id="intro-fill"></div></div>
+      <div id="intro-label">INITIALIZING SYSTEM</div>
+    </div>
+  </div>
+
+  <!-- ========== MAIN SITE ========== -->
+  <div id="site" style="display:none;">
+
+    <!-- NAV -->
+    <nav id="navbar">
+      <div class="nav-logo">EES<span class="dot">.</span></div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-status"><span class="pulse-dot"></span>Available for work</div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <canvas id="three-canvas"></canvas>
+      <div id="hero-content">
+        <div class="hero-tag">Full Stack Developer</div>
+        <h1 id="hero-name">
+          <span class="line">Eyad</span>
+          <span class="line">Emad</span>
+          <span class="line accent">Shaker</span>
+        </h1>
+        <p class="hero-sub">Web · Android · iOS · Digital Marketing</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary">Let's Work Together</a>
+          <a href="#services" class="btn-ghost">View Services</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.instagram.com/eyad_zahran515" target="_blank" class="social-link">Instagram</a>
+          <a href="https://www.facebook.com/share/1bp95JFTwi/" target="_blank" class="social-link">Facebook</a>
+          <a href="https://www.linkedin.com/in/eyad-emad-689973409" target="_blank" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <span>SCROLL</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="section-tag">01 — About</div>
+        <div class="about-grid">
+          <div class="about-left">
+            <h2>Building digital<br/><span class="accent">experiences</span><br/>that matter.</h2>
+            <p>I'm a full-stack developer and digital marketer based in Egypt. I craft fast, beautiful, and functional products — from landing pages to full mobile apps.</p>
+            <div class="about-stats">
+              <div class="stat"><span class="stat-num" data-target="50">0</span><span>+</span><div class="stat-label">Projects Done</div></div>
+              <div class="stat"><span class="stat-num" data-target="3">0</span><span>+</span><div class="stat-label">Years Exp.</div></div>
+              <div class="stat"><span class="stat-num" data-target="30">0</span><span>+</span><div class="stat-label">Happy Clients</div></div>
+            </div>
+          </div>
+          <div class="about-right">
+            <div class="skill-card">
+              <div class="skill-icon">⚡</div>
+              <div class="skill-name">Frontend</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="92"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">🔧</div>
+              <div class="skill-name">Backend</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">📱</div>
+              <div class="skill-name">Mobile (Android & iOS)</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">📣</div>
+              <div class="skill-name">Digital Marketing</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="88"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+        <div class="section-tag">02 — Services</div>
+        <h2 class="section-title">What I <span class="accent">Build</span></h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="s-num">01</div>
+            <div class="s-icon">🌐</div>
+            <h3>Web Development</h3>
+            <p>Fast, responsive, and modern websites built with the latest technologies.</p>
+          </div>
+          <div class="service-card">
+            <div class="s-num">02</div>
+            <div class="s-icon">📱</div>
+            <h3>Mobile Apps</h3>
+            <p>Native and cross-platform Android & iOS apps that users love.</p>
+          </div>
+          <div class="service-card">
+            <div class="s-num">03</div>
+            <div class="s-icon">📊</div>
+            <h3>Digital Marketing</h3>
+            <p>Social media strategy, ads management, and growth campaigns.</p>
+          </div>
+          <div class="service-card">
+            <div class="s-num">04</div>
+            <div class="s-icon">🎨</div>
+            <h3>UI/UX Design</h3>
+            <p>Clean interfaces and smooth user experiences that convert.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-tag">03 — Contact</div>
+        <h2 class="section-title">Let's <span class="accent">Connect</span></h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p class="contact-desc">Ready to build something great? Reach out and let's talk.</p>
+            <div class="contact-items">
+              <a href="https://wa.me/201027102753" target="_blank" class="contact-item">
+                <div class="c-icon">💬</div>
+                <div>
+                  <div class="c-label">WhatsApp</div>
+                  <div class="c-val">+20 102 710 2753</div>
+                </div>
+              </a>
+              <a href="https://ipn.eg/S/eyademad515/instapay/5qbuPK" target="_blank" class="contact-item">
+                <div class="c-icon">💳</div>
+                <div>
+                  <div class="c-label">InstaPay</div>
+                  <div class="c-val">eyademad515@instapay</div>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/eyad_zahran515" target="_blank" class="contact-item">
+                <div class="c-icon">📷</div>
+                <div>
+                  <div class="c-label">Instagram</div>
+                  <div class="c-val">@eyad_zahran515</div>
+                </div>
+              </a>
+              <a href="https://www.facebook.com/share/1bp95JFTwi/" target="_blank" class="contact-item">
+                <div class="c-icon">📘</div>
+                <div>
+                  <div class="c-label">Facebook</div>
+                  <div class="c-val">Eyad Emad Shaker</div>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/eyad-emad-689973409" target="_blank" class="contact-item">
+                <div class="c-icon">💼</div>
+                <div>
+                  <div class="c-label">LinkedIn</div>
+                  <div class="c-val">eyad-emad-689973409</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="contact-cta">
+            <div class="cta-box">
+              <div class="cta-title">Start a Project</div>
+              <p>Got an idea? Let's make it real.</p>
+              <a href="https://wa.me/201027102753" target="_blank" class="btn-primary full">Message Me on WhatsApp →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <span>© 2025 Eyad Emad Shaker</span>
+        <span>Built with passion 🚀</span>
+      </div>
+    </footer>
+
+  </div><!-- /#site -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

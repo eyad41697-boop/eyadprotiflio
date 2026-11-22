@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eyad Emad Shaker — Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-dot"></div>
+  <div id="progress"></div>
+  <div class="nebula"></div>
+  <div id="warp"><div class="rk"><svg viewBox="0 0 60 130" width="60" height="130"><path class="fl" d="M22 92 Q30 140 38 92Z" fill="#ffb347"/><path class="fl" d="M26 92 Q30 120 34 92Z" fill="#fff6c8"/><path d="M16 66 L2 98 L18 90Z" fill="#7c3aed"/><path d="M44 66 L58 98 L42 90Z" fill="#7c3aed"/><path d="M30 2 C45 24 47 52 44 92 H16 C13 52 15 24 30 2Z" fill="#e8f0ff"/><path d="M30 2 C37 12 40 20 41 30 H19 C20 20 23 12 30 2Z" fill="#00e5ff"/><circle cx="30" cy="52" r="8" fill="#04040f" stroke="#00e5ff" stroke-width="3"/></svg></div><div class="wlabel"></div></div>
+  <a class="to-top" href="#hero" aria-label="Back to top">🚀</a>
+
+  <!-- ========== INTRO SCREEN ========== -->
+  <div id="intro">
+    <canvas id="intro-canvas"></canvas>
+    <div id="boot"></div>
+    <button id="intro-skip">SKIP ›</button>
+    <div id="intro-content">
+      <div id="intro-logo">EES</div>
+      <div id="intro-track"><div id="intro-bar"><div id="intro-fill"></div></div><svg id="intro-rocket" viewBox="0 0 60 130" width="16" height="36"><path d="M22 92 Q30 140 38 92Z" fill="#ffb347"/><path d="M16 66 L2 98 L18 90Z" fill="#7c3aed"/><path d="M44 66 L58 98 L42 90Z" fill="#7c3aed"/><path d="M30 2 C45 24 47 52 44 92 H16 C13 52 15 24 30 2Z" fill="#e8f0ff"/><path d="M30 2 C37 12 40 20 41 30 H19 C20 20 23 12 30 2Z" fill="#00e5ff"/></svg></div>
+      <div id="intro-label">INITIALIZING SYSTEM</div>
+    </div>
+  </div>
+
+  <!-- ========== MAIN SITE ========== -->
+  <div id="site" style="display:none;">
+
+    <!-- NAV -->
+    <nav id="navbar">
+      <div class="nav-logo">EES<span class="dot">.</span></div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right"><div class="nav-status"><span class="pulse-dot"></span>Available for work</div><a class="nav-cv" href="Eyad_Emad_Shaker_CV.pdf" download>Download CV</a></div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <canvas id="three-canvas"></canvas>
+      <div class="planet"></div>
+      <div class="hud top"><span>● SYSTEM ONLINE</span><span>MISSION · PORTFOLIO 2026</span><span id="clock">CAIRO --:--:--</span></div>
+      <div class="hud bottom">
+        <div><small>LOCATION</small>Cairo, Egypt</div>
+        <div><small>FOCUS</small>Web · Android · iOS</div>
+        <div><small>STATUS</small>Open to work</div>
+        <div><small>LANGUAGES</small>Arabic · English</div>
+      </div>
+      <div id="hero-content">
+        <div class="avatar"><img src="profile.jpg" alt="Eyad Emad Shaker"/></div>
+        <div class="hero-tag">Full Stack Developer</div>
+        <h1 id="hero-name">
+          <span class="line">Eyad Emad</span>
+          <span class="line accent">Shaker</span>
+        </h1>
+        <p class="hero-sub">I build <span id="typed">websites</span><span class="caret"></span></p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary">Let's Work Together</a>
+          <a href="#services" class="btn-ghost">View Services</a>
+          <a href="Eyad_Emad_Shaker_CV.pdf" download class="btn-ghost cv">Download CV ↓</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.instagram.com/eyad_zahran515" target="_blank" class="social-link">Instagram</a>
+          <a href="https://www.facebook.com/share/1bp95JFTwi/" target="_blank" class="social-link">Facebook</a>
+          <a href="https://www.linkedin.com/in/eyad-emad-689973409" target="_blank" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <span>SCROLL</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <div class="marquee"><div class="track" id="track"></div></div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="section-tag">01 — About</div>
+        <div class="about-grid">
+          <div class="about-left">
+            <h2>Building digital<br/><span class="accent">experiences</span><br/>that matter.</h2>
+            <p>I'm a full-stack developer and digital marketer based in Egypt. I craft fast, beautiful, and functional products — from landing pages to full mobile apps.</p>
+            <dl class="facts">
+              <div><dt>Location</dt><dd>Cairo, Egypt</dd></div>
+              <div><dt>Role</dt><dd>Full-stack developer</dd></div>
+              <div><dt>Focus</dt><dd>Web, Android, iOS</dd></div>
+              <div><dt>Looking for</dt><dd>Internships, freelance, junior roles</dd></div>
+            </dl>
+            <div class="about-stats">
+              <div class="stat"><span class="stat-num" data-target="50">0</span><span>+</span><div class="stat-label">Projects Done</div></div>
+              <div class="stat"><span class="stat-num" data-target="3">0</span><span>+</span><div class="stat-label">Years Exp.</div></div>
+              <div class="stat"><span class="stat-num" data-target="30">0</span><span>+</span><div class="stat-label">Happy Clients</div></div>
+            </div>
+          </div>
+          <div class="about-right">
+            <div class="portrait-card"><img src="profile.jpg" alt="Eyad Emad Shaker in a suit" width="800" height="958"/></div>
+            <div class="skill-card">
+              <div class="skill-icon"><span class="ico" data-i="code"></span></div>
+              <div class="skill-name">Frontend</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="92"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><span class="ico" data-i="server"></span></div>
+              <div class="skill-name">Backend</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><span class="ico" data-i="mobile"></span></div>
+              <div class="skill-name">Mobile (Android & iOS)</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><span class="ico" data-i="megaphone"></span></div>
+              <div class="skill-name">Digital Marketing</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="88"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS GALAXY -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-tag">02 — Skills</div>
+        <h2 class="section-title">My <span class="accent">Galaxy</span></h2>
+        <p class="section-sub">Every ring is a different world. Hover to pause the orbit.</p>
+        <div class="sky">
+          <div class="legend">
+            <div><i style="--c:#00e5ff"></i><div><b>Inner ring</b><span>Front-end and the web</span></div></div>
+            <div><i style="--c:#a78bfa"></i><div><b>Middle ring</b><span>Programming languages</span></div></div>
+            <div><i style="--c:#ffb347"></i><div><b>Outer ring</b><span>Mobile, APIs and tools</span></div></div>
+          </div>
+          <div class="galaxy reveal"><div class="sun">EES</div><div class="ring r1" style="--c:#00e5ff"><b style="--a:0deg">HTML</b><b style="--a:120deg">CSS</b><b style="--a:240deg">JS</b></div><div class="ring r2" style="--c:#a78bfa"><b style="--a:0deg">Node.js</b><b style="--a:72deg">Python</b><b style="--a:144deg">Java</b><b style="--a:216deg">Go</b><b style="--a:288deg">Rust</b></div><div class="ring r3" style="--c:#ffb347"><b style="--a:0deg">Android</b><b style="--a:72deg">iOS</b><b style="--a:144deg">Git</b><b style="--a:216deg">GitHub</b><b style="--a:288deg">APIs</b></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+        <div class="section-tag">03 — Services</div>
+        <h2 class="section-title">What I <span class="accent">Build</span></h2>
+        <p class="section-sub">Everything you need to launch, from the first idea to a live product.</p>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="s-num">01</div>
+            <div class="s-icon"><span class="ico" data-i="web"></span></div>
+            <h3>Web Development</h3>
+            <p>Fast, responsive, and modern websites built with the latest technologies.</p>
+          </div>
+          <div class="service-card">
+            <div class="s-num">02</div>
+            <div class="s-icon"><span class="ico" data-i="mobile"></span></div>
+            <h3>Mobile Apps</h3>
+            <p>Native and cross-platform Android & iOS apps that users love.</p>
+          </div>
+          <div class="service-card">
+            <div class="s-num">03</div>
+            <div class="s-icon"><span class="ico" data-i="megaphone"></span></div>
+            <h3>Digital Marketing</h3>
+            <p>Social media strategy, ads management, and growth campaigns.</p>
+          </div>
+          <div class="service-card">
+            <div class="s-num">04</div>
+            <div class="s-icon"><span class="ico" data-i="spark"></span></div>
+            <h3>UI/UX Design</h3>
+            <p>Clean interfaces and smooth user experiences that convert.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-tag">04 — Projects</div>
+        <h2 class="section-title">Things I <span class="accent">Made</span></h2>
+        <p class="section-sub">Apps and websites I have built, from services to car parts.</p>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="s-num">APP</div>
+            <div class="s-icon"><span class="ico" data-i="gear"></span></div>
+            <h3>Khebra Plus <span class="ar">خبرة بلس</span></h3>
+            <p>A services app that connects people with the services they need.</p>
+          </div>
+          <div class="service-card">
+            <div class="s-num">APP</div>
+            <div class="s-icon"><span class="ico" data-i="car"></span></div>
+            <h3>Tashleeh Plus <span class="ar">تشليح بلس</span></h3>
+            <p>An app for buying and selling used car parts from salvage yards.</p>
+          </div>
+          <div class="service-card">
+            <div class="s-num">WEB</div>
+            <div class="s-icon"><span class="ico" data-i="web"></span></div>
+            <h3>Sandy</h3>
+            <p>A web project focused on functionality, usability, and digital solutions.</p>
+          </div>
+          <div class="service-card">
+            <div class="s-num">WEB</div>
+            <div class="s-icon"><span class="ico" data-i="rocket"></span></div>
+            <h3>This Portfolio</h3>
+            <p>Designed and built from scratch with Three.js, particles, and custom animations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process">
+      <div class="container">
+        <div class="section-tag">05 — Process</div>
+        <h2 class="section-title">How I <span class="accent">Launch</span></h2>
+        <p class="section-sub">From a rough idea to a live product in four clear steps.</p>
+        <div class="path"><div class="rail"><i class="ship"></i></div><div class="step" style="--i:0"><b>01</b><span class="ico" data-i="spark"></span><h3>Idea</h3><p>We talk about your goal, your users, and what success looks like.</p></div><div class="step" style="--i:1"><b>02</b><span class="ico" data-i="web"></span><h3>Design</h3><p>I sketch the layout, colors, and flow before writing any code.</p></div><div class="step" style="--i:2"><b>03</b><span class="ico" data-i="code"></span><h3>Build</h3><p>I write clean, fast code for web or mobile and test it on real devices.</p></div><div class="step" style="--i:3"><b>04</b><span class="ico" data-i="rocket"></span><h3>Launch</h3><p>I publish it, check that everything works, and fix what comes up.</p></div></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-tag">06 — Contact</div>
+        <h2 class="section-title">Let's <span class="accent">Connect</span></h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p class="contact-desc">Ready to build something great? Reach out and let's talk.</p>
+            <div class="contact-items">
+              <a href="Eyad_Emad_Shaker_CV.pdf" download class="contact-item">
+                <div class="c-icon"><span class="ico" data-i="file"></span></div>
+                <div>
+                  <div class="c-label">Resume</div>
+                  <div class="c-val">Download my CV (PDF)</div>
+                </div>
+              </a>
+              <a href="mailto:eyad41697@gmail.com" class="contact-item">
+                <div class="c-icon"><span class="ico" data-i="mail"></span></div>
+                <div>
+                  <div class="c-label">Email</div>
+                  <div class="c-val">eyad41697@gmail.com</div>
+                </div>
+              </a>
+              <a href="https://wa.me/201027102753" target="_blank" class="contact-item">
+                <div class="c-icon"><span class="ico" data-i="chat"></span></div>
+                <div>
+                  <div class="c-label">WhatsApp</div>
+                  <div class="c-val">+20 102 710 2753</div>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/eyad_zahran515" target="_blank" class="contact-item">
+                <div class="c-icon"><span class="ico" data-i="insta"></span></div>
+                <div>
+                  <div class="c-label">Instagram</div>
+                  <div class="c-val">@eyad_zahran515</div>
+                </div>
+              </a>
+              <a href="https://www.facebook.com/share/1bp95JFTwi/" target="_blank" class="contact-item">
+                <div class="c-icon"><span class="ico" data-i="fb"></span></div>
+                <div>
+                  <div class="c-label">Facebook</div>
+                  <div class="c-val">Eyad Emad Shaker</div>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/eyad-emad-689973409" target="_blank" class="contact-item">
+                <div class="c-icon"><span class="ico" data-i="linkedin"></span></div>
+                <div>
+                  <div class="c-label">LinkedIn</div>
+                  <div class="c-val">eyad-emad-689973409</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="contact-cta">
+            <div class="cta-box">
+              <div class="cta-title">Start a Project</div>
+              <p>Got an idea? Let's make it real.</p>
+              <a href="https://wa.me/201027102753" target="_blank" class="btn-primary full">Message Me on WhatsApp →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="foot">
+        <div><b class="fbrand">EES<span class="dot">.</span></b><p>Full-stack developer in Cairo. Websites, apps, and growth.</p></div>
+        <div class="fcol"><small>EXPLORE</small><a href="#about">About</a><a href="#skills">Skills</a><a href="#services">Services</a><a href="#projects">Projects</a></div>
+        <div class="fcol"><small>CONTACT</small><a href="mailto:eyad41697@gmail.com">Email</a><a href="https://wa.me/201027102753" target="_blank" rel="noopener">WhatsApp</a><a href="Eyad_Emad_Shaker_CV.pdf" download>Download CV</a></div>
+      </div>
+      <div class="copy"><span>© 2026 Eyad Emad Shaker</span><span>Built with passion 🚀</span></div>
+    </footer>
+
+  </div><!-- /#site -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
